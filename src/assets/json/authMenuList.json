@@ -16,6 +16,78 @@
       }
     },
     {
+      "path": "/music",
+      "name": "music",
+      "redirect": "/music/singer",
+      "meta": {
+        "icon": "Service",
+        "title": "音乐管理",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/music/singer",
+          "name": "singer",
+          "component": "/music/singer",
+          "meta": {
+            "icon": "Headset",
+            "title": "歌手",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/music/song",
+          "name": "song",
+          "component": "/music/song",
+          "meta": {
+            "icon": "VideoPlay",
+            "title": "歌曲",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/music/songList",
+          "name": "songList",
+          "component": "/music/songList",
+          "meta": {
+            "icon": "VideoPlay",
+            "title": "歌单",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/user",
+      "name": "user",
+      "component": "/user/index",
+      "meta": {
+        "icon": "User",
+        "title": "用户管理",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      }
+    },
+    {
       "path": "/dataScreen",
       "name": "dataScreen",
       "component": "/dataScreen/index",
@@ -379,208 +451,6 @@
       ]
     },
     {
-      "path": "/dashboard",
-      "name": "dashboard",
-      "redirect": "/dashboard/dataVisualize",
-      "meta": {
-        "icon": "Odometer",
-        "title": "Dashboard",
-        "isLink": "",
-        "isHide": false,
-        "isFull": false,
-        "isAffix": false,
-        "isKeepAlive": true
-      },
-      "children": [
-        {
-          "path": "/dashboard/dataVisualize",
-          "name": "dataVisualize",
-          "component": "/dashboard/dataVisualize/index",
-          "meta": {
-            "icon": "Menu",
-            "title": "数据可视化",
-            "isLink": "",
-            "isHide": false,
-            "isFull": false,
-            "isAffix": false,
-            "isKeepAlive": true
-          }
-        }
-      ]
-    },
-    {
-      "path": "/form",
-      "name": "form",
-      "redirect": "/form/proForm",
-      "meta": {
-        "icon": "Tickets",
-        "title": "表单 Form",
-        "isLink": "",
-        "isHide": false,
-        "isFull": false,
-        "isAffix": false,
-        "isKeepAlive": true
-      },
-      "children": [
-        {
-          "path": "/form/proForm",
-          "name": "proForm",
-          "component": "/form/proForm/index",
-          "meta": {
-            "icon": "Menu",
-            "title": "超级 Form",
-            "isLink": "",
-            "isHide": false,
-            "isFull": false,
-            "isAffix": false,
-            "isKeepAlive": true
-          }
-        },
-        {
-          "path": "/form/basicForm",
-          "name": "basicForm",
-          "component": "/form/basicForm/index",
-          "meta": {
-            "icon": "Menu",
-            "title": "基础 Form",
-            "isLink": "",
-            "isHide": false,
-            "isFull": false,
-            "isAffix": false,
-            "isKeepAlive": true
-          }
-        },
-        {
-          "path": "/form/validateForm",
-          "name": "validateForm",
-          "component": "/form/validateForm/index",
-          "meta": {
-            "icon": "Menu",
-            "title": "校验 Form",
-            "isLink": "",
-            "isHide": false,
-            "isFull": false,
-            "isAffix": false,
-            "isKeepAlive": true
-          }
-        },
-        {
-          "path": "/form/dynamicForm",
-          "name": "dynamicForm",
-          "component": "/form/dynamicForm/index",
-          "meta": {
-            "icon": "Menu",
-            "title": "动态 Form",
-            "isLink": "",
-            "isHide": false,
-            "isFull": false,
-            "isAffix": false,
-            "isKeepAlive": true
-          }
-        }
-      ]
-    },
-    {
-      "path": "/echarts",
-      "name": "echarts",
-      "redirect": "/echarts/waterChart",
-      "meta": {
-        "icon": "TrendCharts",
-        "title": "ECharts",
-        "isLink": "",
-        "isHide": false,
-        "isFull": false,
-        "isAffix": false,
-        "isKeepAlive": true
-      },
-      "children": [
-        {
-          "path": "/echarts/waterChart",
-          "name": "waterChart",
-          "component": "/echarts/waterChart/index",
-          "meta": {
-            "icon": "Menu",
-            "title": "水型图",
-            "isLink": "",
-            "isHide": false,
-            "isFull": false,
-            "isAffix": false,
-            "isKeepAlive": true
-          }
-        },
-        {
-          "path": "/echarts/columnChart",
-          "name": "columnChart",
-          "component": "/echarts/columnChart/index",
-          "meta": {
-            "icon": "Menu",
-            "title": "柱状图",
-            "isLink": "",
-            "isHide": false,
-            "isFull": false,
-            "isAffix": false,
-            "isKeepAlive": true
-          }
-        },
-        {
-          "path": "/echarts/lineChart",
-          "name": "lineChart",
-          "component": "/echarts/lineChart/index",
-          "meta": {
-            "icon": "Menu",
-            "title": "折线图",
-            "isLink": "",
-            "isHide": false,
-            "isFull": false,
-            "isAffix": false,
-            "isKeepAlive": true
-          }
-        },
-        {
-          "path": "/echarts/pieChart",
-          "name": "pieChart",
-          "component": "/echarts/pieChart/index",
-          "meta": {
-            "icon": "Menu",
-            "title": "饼图",
-            "isLink": "",
-            "isHide": false,
-            "isFull": false,
-            "isAffix": false,
-            "isKeepAlive": true
-          }
-        },
-        {
-          "path": "/echarts/radarChart",
-          "name": "radarChart",
-          "component": "/echarts/radarChart/index",
-          "meta": {
-            "icon": "Menu",
-            "title": "雷达图",
-            "isLink": "",
-            "isHide": false,
-            "isFull": false,
-            "isAffix": false,
-            "isKeepAlive": true
-          }
-        },
-        {
-          "path": "/echarts/nestedChart",
-          "name": "nestedChart",
-          "component": "/echarts/nestedChart/index",
-          "meta": {
-            "icon": "Menu",
-            "title": "嵌套环形图",
-            "isLink": "",
-            "isHide": false,
-            "isFull": false,
-            "isAffix": false,
-            "isKeepAlive": true
-          }
-        }
-      ]
-    },
-    {
       "path": "/directives",
       "name": "directives",
       "redirect": "/directives/copyDirect",
@@ -671,138 +541,6 @@
           "meta": {
             "icon": "Menu",
             "title": "长按指令",
-            "isLink": "",
-            "isHide": false,
-            "isFull": false,
-            "isAffix": false,
-            "isKeepAlive": true
-          }
-        }
-      ]
-    },
-    {
-      "path": "/menu",
-      "name": "menu",
-      "redirect": "/menu/menu1",
-      "meta": {
-        "icon": "List",
-        "title": "菜单嵌套",
-        "isLink": "",
-        "isHide": false,
-        "isFull": false,
-        "isAffix": false,
-        "isKeepAlive": true
-      },
-      "children": [
-        {
-          "path": "/menu/menu1",
-          "name": "menu1",
-          "component": "/menu/menu1/index",
-          "meta": {
-            "icon": "Menu",
-            "title": "菜单1",
-            "isLink": "",
-            "isHide": false,
-            "isFull": false,
-            "isAffix": false,
-            "isKeepAlive": true
-          }
-        },
-        {
-          "path": "/menu/menu2",
-          "name": "menu2",
-          "redirect": "/menu/menu2/menu21",
-          "meta": {
-            "icon": "Menu",
-            "title": "菜单2",
-            "isLink": "",
-            "isHide": false,
-            "isFull": false,
-            "isAffix": false,
-            "isKeepAlive": true
-          },
-          "children": [
-            {
-              "path": "/menu/menu2/menu21",
-              "name": "menu21",
-              "component": "/menu/menu2/menu21/index",
-              "meta": {
-                "icon": "Menu",
-                "title": "菜单2-1",
-                "isLink": "",
-                "isHide": false,
-                "isFull": false,
-                "isAffix": false,
-                "isKeepAlive": true
-              }
-            },
-            {
-              "path": "/menu/menu2/menu22",
-              "name": "menu22",
-              "redirect": "/menu/menu2/menu22/menu221",
-              "meta": {
-                "icon": "Menu",
-                "title": "菜单2-2",
-                "isLink": "",
-                "isHide": false,
-                "isFull": false,
-                "isAffix": false,
-                "isKeepAlive": true
-              },
-              "children": [
-                {
-                  "path": "/menu/menu2/menu22/menu221",
-                  "name": "menu221",
-                  "component": "/menu/menu2/menu22/menu221/index",
-                  "meta": {
-                    "icon": "Menu",
-                    "title": "菜单2-2-1",
-                    "isLink": "",
-                    "isHide": false,
-                    "isFull": false,
-                    "isAffix": false,
-                    "isKeepAlive": true
-                  }
-                },
-                {
-                  "path": "/menu/menu2/menu22/menu222",
-                  "name": "menu222",
-                  "component": "/menu/menu2/menu22/menu222/index",
-                  "meta": {
-                    "icon": "Menu",
-                    "title": "菜单2-2-2",
-                    "isLink": "",
-                    "isHide": false,
-                    "isFull": false,
-                    "isAffix": false,
-                    "isKeepAlive": true
-                  }
-                }
-              ]
-            },
-            {
-              "path": "/menu/menu2/menu23",
-              "name": "menu23",
-              "component": "/menu/menu2/menu23/index",
-              "meta": {
-                "icon": "Menu",
-                "title": "菜单2-3",
-                "isLink": "",
-                "isHide": false,
-                "isFull": false,
-                "isAffix": false,
-                "isKeepAlive": true
-              }
-            }
-          ]
-        },
-        {
-          "path": "/menu/menu3",
-          "name": "menu3",
-          "component": "/menu/menu3/index",
-          "meta": {
-            "icon": "Menu",
-            "title": "菜单3",
             "isLink": "",
             "isHide": false,
             "isFull": false,
@@ -925,106 +663,6 @@
           }
         }
       ]
-    },
-    {
-      "path": "/link",
-      "name": "link",
-      "redirect": "/link/bing",
-      "meta": {
-        "icon": "Paperclip",
-        "title": "外部链接",
-        "isLink": "",
-        "isHide": false,
-        "isFull": false,
-        "isAffix": false,
-        "isKeepAlive": true
-      },
-      "children": [
-        {
-          "path": "/link/bing",
-          "name": "bing",
-          "component": "/link/bing/index",
-          "meta": {
-            "icon": "Menu",
-            "title": "Bing 内嵌",
-            "isLink": "",
-            "isHide": false,
-            "isFull": false,
-            "isAffix": false,
-            "isKeepAlive": true
-          }
-        },
-        {
-          "path": "/link/gitee",
-          "name": "gitee",
-          "component": "/link/gitee/index",
-          "meta": {
-            "icon": "Menu",
-            "title": "Gitee 仓库",
-            "isLink": "https://gitee.com/HalseySpicy/Geeker-Admin",
-            "isHide": false,
-            "isFull": false,
-            "isAffix": false,
-            "isKeepAlive": true
-          }
-        },
-        {
-          "path": "/link/github",
-          "name": "github",
-          "component": "/link/github/index",
-          "meta": {
-            "icon": "Menu",
-            "title": "GitHub 仓库",
-            "isLink": "https://github.com/HalseySpicy/Geeker-Admin",
-            "isHide": false,
-            "isFull": false,
-            "isAffix": false,
-            "isKeepAlive": true
-          }
-        },
-        {
-          "path": "/link/docs",
-          "name": "docs",
-          "component": "/link/docs/index",
-          "meta": {
-            "icon": "Menu",
-            "title": "项目文档",
-            "isLink": "https://docs.spicyboy.cn",
-            "isHide": false,
-            "isFull": false,
-            "isAffix": false,
-            "isKeepAlive": true
-          }
-        },
-        {
-          "path": "/link/juejin",
-          "name": "juejin",
-          "component": "/link/juejin/index",
-          "meta": {
-            "icon": "Menu",
-            "title": "掘金主页",
-            "isLink": "https://juejin.cn/user/3263814531551816/posts",
-            "isHide": false,
-            "isFull": false,
-            "isAffix": false,
-            "isKeepAlive": true
-          }
-        }
-      ]
-    },
-    {
-      "path": "/about/index",
-      "name": "about",
-      "component": "/about/index",
-      "meta": {
-        "icon": "InfoFilled",
-        "title": "关于项目",
-        "isLink": "",
-        "isHide": false,
-        "isFull": false,
-        "isAffix": false,
-        "isKeepAlive": true
-      }
     }
   ],
   "msg": "成功"
